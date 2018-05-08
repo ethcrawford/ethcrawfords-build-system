@@ -6,5 +6,13 @@
   "repository": "git@github.com:ethcrawford/ethcrawfords-build-system.git",
   "author": "Ethan Crawford <ethcrawford@gmail.com>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "scripts": {
+    "start": "brunch watch --server",
+    "watch": "brunch watch",
+    "build": "brunch build --production"
+  },
+  "devDependencies": {
+    "brunch": "^2.10.12"
+  }
 }
