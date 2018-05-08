@@ -1,0 +1,10 @@
+{
+  "name": "ethcrawfords-build-system",
+  "version": "1.0.0",
+  "description": "no description",
+  "main": "index.js",
+  "repository": "git@github.com:ethcrawford/ethcrawfords-build-system.git",
+  "author": "Ethan Crawford <ethcrawford@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
