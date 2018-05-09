@@ -13,7 +13,9 @@
     "build-dev": "brunch build",
     "build": "brunch build --production",
     "static": "static public",
-    "sprite": "node sprite.js"
+    "sprite": "node sprite.js",
+    "clean-public": "rm -rf public/",
+    "clean-sprite": "rm -rf sprite/"
   },
   "devDependencies": {
     "auto-reload-brunch": "^2.7.1",
