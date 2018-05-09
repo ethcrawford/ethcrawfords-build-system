@@ -1,11 +1,20 @@
 @import 'styles/mixins/_rem.styl'
 @import 'styles/mixins/_media.styl'
-.foo
-  width: rem(240px)
-  +wider(768px)
-    width: rem(576px)
-.bar
-  width: rem(240px)
-@media (min-width: 768px)
+@import 'styles/mixins/_composer.styl'
+baz-var = true
+foo-var = false
+bar-var = true
++composer(baz-var)
+  .baz
+    width: rem(240px)
++composer(foo-var)
+  .foo
+    width: rem(240px)
+    +wider(768px)
+      width: rem(576px)
++composer(bar-var)
   .bar
-    width: rem(576px)
+    width: rem(240px)
+  @media (min-width: 768px)
+    .bar
+      width: rem(576px)
