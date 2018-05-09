@@ -9,6 +9,9 @@ exports.config = {
     htmlPages: {
       compileAssets: true,
       disabled: false
+    },
+    pug: {
+      pugRuntime: false
     }
   },
   sourceMaps: false
