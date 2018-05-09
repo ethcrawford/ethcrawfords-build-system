@@ -13,6 +13,9 @@
     "build": "brunch build --production"
   },
   "devDependencies": {
-    "brunch": "^2.10.12"
+    "auto-reload-brunch": "^2.7.1",
+    "brunch": "^2.10.12",
+    "clean-css-brunch": "^2.10.0",
+    "uglify-js-brunch": "^2.10.0"
   }
 }
