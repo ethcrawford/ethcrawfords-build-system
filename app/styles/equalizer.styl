@@ -1,0 +1,34 @@
+@import 'variables/_colors.styl'
+@import 'variables/_sizes.styl'
+@import 'variables/_initiator.styl'
+@import 'mixins/_rem.styl'
+@import 'mixins/_media.styl'
+@import 'mixins/_composer.styl'
++composer(heading_clear)
+  .heading
+    &--clear
+      margin-top: 0
+      margin-bottom: 0
+      color: base_color
+      font-weight: 400
+      font-size: rem(base_heading_font-size)
++composer(text_clear)
+  .text
+    &--clear
+      margin-top: 0
+      margin-bottom: 0
+      color: base_color
+      font-weight: 400
+      font-size: rem(base_text_font-size)
++composer(link_clear)
+  .link
+    &--clear
+      color: base_color
+      text-decoration: none
+      font-size: rem(base_text_font-size)
++composer(image_auto)
+  .image
+    &--auto
+      width: 100%
+      height: auto
+      vertical-align: middle
