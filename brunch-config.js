@@ -1,5 +1,6 @@
 const poststylus = require('poststylus');
 const autoprefixer = require('autoprefixer');
+const mqpacker = require('css-mqpacker');
 exports.config = {
   files: {
     javascripts: {joinTo: 'app.js'},
@@ -18,7 +19,8 @@ exports.config = {
     stylus: {
       plugins: [
         poststylus([
-          autoprefixer({ browsers: ['last 3 versions'] })
+          autoprefixer({ browsers: ['last 3 versions'] }),
+          mqpacker()
         ])
       ]
     }
