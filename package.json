@@ -15,6 +15,7 @@
   },
   "devDependencies": {
     "auto-reload-brunch": "^2.7.1",
+    "autoprefixer-stylus": "^0.14.0",
     "brunch": "^2.10.12",
     "clean-css-brunch": "^2.10.0",
     "html-pages-brunch": "^2.7.0",

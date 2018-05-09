@@ -12,6 +12,11 @@ exports.config = {
     },
     pug: {
       pugRuntime: false
+    },
+    stylus: {
+      plugins: [
+        require('autoprefixer-stylus')()
+      ]
     }
   },
   sourceMaps: false
