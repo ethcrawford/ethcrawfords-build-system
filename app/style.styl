@@ -1,3 +1,4 @@
+@import 'styles/mixins/_rem.styl'
 h1
   box-sizing: border-box
   color: #3f894a
@@ -6,10 +7,10 @@ h1
   justify-content: center
   flex-grow: 1
 .foo
-  width: 240px
+  width: rem(240px)
 @media screen and (min-width: 768px)
   .foo
-    width: 576px
+    width: rem(576px)
 .bar
   width: 160px
 @media screen and (min-width: 768px)
