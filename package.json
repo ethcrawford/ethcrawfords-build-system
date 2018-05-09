@@ -20,6 +20,7 @@
     "clean-css-brunch": "^2.10.0",
     "css-mqpacker": "^6.0.2",
     "html-pages-brunch": "^2.7.0",
+    "imagemin-brunch": "^1.1.0",
     "poststylus": "^1.0.0",
     "pugjs-brunch": "^2.10.2",
     "stylus-brunch": "^2.10.0",
