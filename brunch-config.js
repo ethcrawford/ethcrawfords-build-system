@@ -3,7 +3,13 @@ exports.config = {
     javascripts: {joinTo: 'app.js'},
     stylesheets: {joinTo: 'app.css'}
   },
-  npm: {enabled: false},
   modules: {wrapper: false, definition: false},
+  npm: {enabled: false},
+  plugins: {
+    htmlPages: {
+      compileAssets: true,
+      disabled: false
+    }
+  },
   sourceMaps: false
 }
