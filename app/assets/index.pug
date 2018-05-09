@@ -1,18 +1,11 @@
-doctype html
-html(lang='en')
-  head
-    meta(charset='utf-8')
-    title Test
-    link(rel='stylesheet' href='app.css')
-  body
-    h1 Test Pug
-    p Lorem ipsum
-    img(src='images/brunch-icon-mark.png')
-    .sprite-icon.sprite-icon--arrow-left
-    .sprite-icon.sprite-icon--arrow-right
-    .sprite-icon.sprite-icon--butterfly
-    .sprite-icon.sprite-icon--cat
-    .sprite-icon.sprite-icon--cloud
-    .sprite-icon.sprite-icon--cloud3
-    .sprite-icon.sprite-icon--marker
-  script(src='app.js')
+extends _base.pug
+block title
+  title Brunch
+block main
+  header.page-header
+    .container
+      h1 Brunch
+  main.main
+  footer.page-footer
+    .container
+      p &copy; Ethcrawford 2018
