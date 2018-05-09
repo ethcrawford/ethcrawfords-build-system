@@ -1,3 +1,5 @@
+const poststylus = require('poststylus');
+const autoprefixer = require('autoprefixer');
 exports.config = {
   files: {
     javascripts: {joinTo: 'app.js'},
@@ -15,7 +17,9 @@ exports.config = {
     },
     stylus: {
       plugins: [
-        require('autoprefixer-stylus')()
+        poststylus([
+          autoprefixer({ browsers: ['last 3 versions'] })
+        ])
       ]
     }
   },
