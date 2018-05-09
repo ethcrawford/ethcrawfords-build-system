@@ -1,21 +1,11 @@
 @import 'styles/mixins/_rem.styl'
-h1
-  box-sizing: border-box
-  color: #3f894a
-  display: flex
-  align-items: baseline
-  justify-content: center
-  flex-grow: 1
+@import 'styles/mixins/_media.styl'
 .foo
   width: rem(240px)
-@media screen and (min-width: 768px)
-  .foo
+  +wider(768px)
     width: rem(576px)
 .bar
-  width: 160px
-@media screen and (min-width: 768px)
+  width: rem(240px)
+@media (min-width: 768px)
   .bar
-    width: 384px
-@media screen and (min-width: 768px)
-  .baz
-    width: 1000px
+    width: rem(576px)
