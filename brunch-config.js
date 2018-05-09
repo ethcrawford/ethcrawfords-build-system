@@ -4,5 +4,6 @@ exports.config = {
     stylesheets: {joinTo: 'app.css'}
   },
   npm: {enabled: false},
-  modules: {wrapper: false, definition: false}
+  modules: {wrapper: false, definition: false},
+  sourceMaps: false
 }
