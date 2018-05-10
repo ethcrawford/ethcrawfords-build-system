@@ -2,10 +2,16 @@ extends _base.pug
 block title
   title Brunch
 block main
+  h1.heading.heading--clear.visually-hidden Brunch
   header.page-header
     .container
-      h1 Brunch
+      .navbar.page-header__navbar
+        a.link.link--clear.app-logo.navbar__logo(href='#') Brunch
   main.main
+    section.section.section--base.home-section
+      .container
+        h2.heading.heading--clear.section__heading.home-section__heading Heading
+        p.text.text--clear.section__text.home-section__text Lorem ipsum dolor
   footer.page-footer
     .container
-      p &copy; Ethcrawford 2018
+      p.text.text--clear.copyright-text &copy; Ethcrawford 2018
