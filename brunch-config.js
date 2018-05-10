@@ -4,7 +4,14 @@ const mqpacker = require('css-mqpacker');
 exports.config = {
   files: {
     javascripts: {joinTo: 'app.js'},
-    stylesheets: {joinTo: 'app.css'}
+    stylesheets: {
+      joinTo: 'app.css',
+      order: {
+        before: [
+          /styles\/base\.styl/
+        ]
+      }
+    }
   },
   modules: {wrapper: false, definition: false},
   npm: {enabled: false},
