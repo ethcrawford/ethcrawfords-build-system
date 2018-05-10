@@ -13,11 +13,14 @@ body
 +composer(foo-var)
   .foo
     width: rem(240px)
-    +wider(768px)
-      width: rem(576px)
+    +wider(media-md)
+      width: rem(media-sm)
 +composer(bar-var)
   .bar
     width: rem(240px)
-  @media (min-width: 768px)
+  @media (min-width: media-md)
     .bar
-      width: rem(576px)
+      width: rem(media-sm)
+  @media (min-width: media-lg)
+    .bar
+      width: rem(media-lg)
