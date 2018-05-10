@@ -8,6 +8,7 @@ exports.config = {
       joinTo: 'app.css',
       order: {
         before: [
+          /styles\/box-model\.styl/,
           /styles\/normalize\.styl/,
           /styles\/base\.styl/
         ]
