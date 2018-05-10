@@ -3,7 +3,14 @@ const autoprefixer = require('autoprefixer');
 const mqpacker = require('css-mqpacker');
 exports.config = {
   files: {
-    javascripts: {joinTo: 'app.js'},
+    javascripts: {
+      joinTo: 'app.js',
+      order: {
+        beford: [
+          /scripts\/jquery.min.js/
+        ]
+      }
+    },
     stylesheets: {
       joinTo: 'app.css',
       order: {
