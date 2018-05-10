@@ -14,6 +14,7 @@
     "build": "brunch build --production",
     "static": "static public",
     "sprite": "node sprite.js",
+    "mqpack": "node mqpack.js",
     "clean-public": "rm -rf public/",
     "clean-sprite": "rm -rf sprite/"
   },
