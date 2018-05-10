@@ -6,7 +6,7 @@ exports.config = {
     javascripts: {
       joinTo: 'app.js',
       order: {
-        beford: [
+        before: [
           /scripts\/jquery.min.js/
         ]
       }
