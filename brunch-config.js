@@ -10,6 +10,7 @@ exports.config = {
         before: [
           /styles\/box-model\.styl/,
           /styles\/normalize\.styl/,
+          /styles\/modular-grid\.styl/,
           /styles\/base\.styl/
         ]
       }
