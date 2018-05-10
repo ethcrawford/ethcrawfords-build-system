@@ -1,0 +1,23 @@
+@import 'variables/_colors.styl'
+@import 'variables/_sizes.styl'
+@import 'variables/_initiator.styl'
+@import 'mixins/_rem.styl'
+@import 'mixins/_media.styl'
+@import 'mixins/_composer.styl'
++composer(button)
+  .button
+    +composer(button_full-size)
+      &--full-size
+        display: block
+        width: 100%
+    +composer(button_outline)
+      &--outline
+        padding: rem(8px) rem(15px)
+        border: rem(1px) base_color solid
+        &:hover,
+        &:focus
+          background-color: base_color
+          color: white_color
+    +composer(button_rounded)
+      &--rounded
+        border-radius: rem(500px)
