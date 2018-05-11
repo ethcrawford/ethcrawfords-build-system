@@ -8,6 +8,19 @@
 +composer(special)
   .example
     background-color: red
+  +composer(navbar)
+    .navbar
+      &__toggle
+        margin-right: 1.875rem
+      &__logo
+        margin-right: 2.5rem
+      &__item
+        margin-right: 1.875rem
+        &--last
+          margin-right: 0
+      &__link
+        &:hover
+          text-decoration: line-through
   +composer(sprite-icon_special)
     .sprite-icon
       &--arrow-left
