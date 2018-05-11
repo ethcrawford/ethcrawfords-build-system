@@ -26,6 +26,7 @@ exports.config = {
           /styles\/special\.styl/,
           /styles\/switch\.styl/,
           /styles\/utility\.styl/,
+          /styles\/forced\.styl/,
           /styles\/visually-hidden\.styl/
         ]
       }
