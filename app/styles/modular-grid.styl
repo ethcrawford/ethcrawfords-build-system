@@ -1,24 +1,24 @@
-/*
- * Ethcrawfords grid system
- * Based on flex-grid-framework and bootstrap 4 grid
- * v1.0.0 2018
- * Licensed under MIT
- */
-/**
- * Use the node-css-mqpacker tool or similar tool to optimize the number of media queries
- */
+///*
+// * Ethcrawfords grid system
+// * Based on flex-grid-framework and bootstrap 4 grid
+// * v1.0.0 2018
+// * Licensed under MIT
+// */
+///**
+// * Use the node-css-mqpacker tool or similar tool to optimize the number of media queries
+// */
 
 @import 'variables/_sizes.styl'
 @import 'variables/_modular-grid.styl'
 
-/**
- * Ethcrawfords grid core (ethcrawfords-grid-core.styl)
- * GENERATOR
- */
+///**
+// * Ethcrawfords grid core (ethcrawfords-grid-core.styl)
+// * GENERATOR
+// */
 // [START]
 
-/* Container
-------------------------------------------------*/
+// Container
+//----------------------------------------------*/
 $common-container
   width 100%
   padding-right gutter-width
@@ -99,8 +99,8 @@ auto-column-mixin()
   width auto
   max-width none
 
-/* Flex columns
-------------------------------------------------*/
+// Flex columns
+//----------------------------------------------*/
 if (column-flex && row)
   .col
     @extends $common-column
@@ -228,8 +228,8 @@ first-order-mixin()
 last-order-mixin()
   order (columns-number + 1)
 
-/* First order
-------------------------------------------------*/
+// First order
+//----------------------------------------------*/
 if (order-first && column)
   .order-first
     first-order-mixin()
