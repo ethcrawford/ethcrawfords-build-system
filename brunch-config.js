@@ -19,6 +19,7 @@ exports.config = {
           /styles\/normalize\.styl/,
           /styles\/modular-grid\.styl/,
           /styles\/base\.styl/,
+          /styles\/equalizer\.styl/,
           /styles\/default\.styl/,
           /styles\/common\.styl/
         ],
