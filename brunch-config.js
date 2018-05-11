@@ -24,6 +24,7 @@ exports.config = {
         ],
         after: [
           /styles\/special\.styl/,
+          /styles\/animator\.styl/,
           /styles\/switch\.styl/,
           /styles\/utility\.styl/,
           /styles\/forced\.styl/,
