@@ -2,25 +2,16 @@
 @import 'variables/_sizes.styl'
 @import 'variables/_parameters.styl'
 @import 'variables/_initiator.styl'
+@import 'variables/_sprite.styl'
 @import 'mixins/_rem.styl'
 @import 'mixins/_media.styl'
 @import 'mixins/_composer.styl'
+@import 'mixins/_sprite.styl'
 +composer(special)
-  .example
-    background-color: red
   +composer(navbar)
     .navbar
       &__toggle
-        margin-right: 1.875rem
-      &__logo
-        margin-right: 2.5rem
-      &__item
-        margin-right: 1.875rem
-        &--last
-          margin-right: 0
-      &__link
-        &:hover
-          text-decoration: line-through
+        margin-right: rem(30px)
   +composer(slide-out-menu)
     .slide-out-menu
       position: fixed
