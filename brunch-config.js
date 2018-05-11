@@ -18,7 +18,8 @@ exports.config = {
           /styles\/box-model\.styl/,
           /styles\/normalize\.styl/,
           /styles\/modular-grid\.styl/,
-          /styles\/base\.styl/
+          /styles\/base\.styl/,
+          /styles\/default\.styl/
         ],
         after: [
           /styles\/visually-hidden\.styl/
