@@ -8,3 +8,16 @@
 +composer(switch)
   .example
     background-color: purple
+  +composer(slide-out-menu_open)
+    .slide-out-menu
+      &--open
+        left: 0
+    .slide-out-menu-overlay
+      &--active
+        position: fixed
+        top: 0
+        left: 0
+        z-index: slide-out-menu-overlay_z-index
+        display: block
+        width: 100%
+        height: 100%

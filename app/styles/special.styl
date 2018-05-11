@@ -21,6 +21,42 @@
       &__link
         &:hover
           text-decoration: line-through
+  +composer(slide-out-menu)
+    .slide-out-menu
+      position: fixed
+      top: 0
+      left: rem(-300px)
+      z-index: slide-out-menu_z-index
+      overflow-y: auto
+      padding: rem(40px)
+      width: rem(300px)
+      height: 100%
+      background-color: slide-out-menu_bg-color
+      transition: all .7s cubic-bezier(.545, 0, .05, 1)
+      +wider(media-lg)
+        left: rem(-380px)
+        width: rem(380px)
+    .slide-out-menu-overlay
+      display: none
+  +composer(menu)
+    .menu
+      &__title
+        margin-bottom: rem(20px)
+        color: white_color
+      &__toggle
+        position: absolute
+        top: rem(40px)
+        right: rem(40px)
+        border-color: white_color
+        color: white_color
+      &__button
+        margin-bottom: rem(16px)
+        border-color: white_color
+        color: white_color
+        &:hover, &:active
+          border-color: white_color
+          background-color: white_color
+          color: base_color
   +composer(sprite-icon_special)
     .sprite-icon
       &--arrow-left
