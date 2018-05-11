@@ -25,6 +25,7 @@ exports.config = {
         after: [
           /styles\/special\.styl/,
           /styles\/switch\.styl/,
+          /styles\/utility\.styl/,
           /styles\/visually-hidden\.styl/
         ]
       }
