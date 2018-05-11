@@ -19,7 +19,8 @@ exports.config = {
           /styles\/normalize\.styl/,
           /styles\/modular-grid\.styl/,
           /styles\/base\.styl/,
-          /styles\/default\.styl/
+          /styles\/default\.styl/,
+          /styles\/common\.styl/
         ],
         after: [
           /styles\/visually-hidden\.styl/
