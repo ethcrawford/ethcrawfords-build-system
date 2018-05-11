@@ -23,6 +23,7 @@ exports.config = {
           /styles\/common\.styl/
         ],
         after: [
+          /styles\/special\.styl/,
           /styles\/visually-hidden\.styl/
         ]
       }
