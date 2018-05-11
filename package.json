@@ -11,10 +11,9 @@
     "start": "brunch watch --server",
     "watch": "brunch watch",
     "build-dev": "brunch build",
-    "build": "brunch build --production && node mqpack.js",
+    "build": "brunch build --production",
     "static": "static public",
     "sprite": "node sprite.js",
-    "mqpack": "node mqpack.js",
     "clean-public": "rm -rf public/",
     "clean-sprite": "rm -rf sprite/"
   },
