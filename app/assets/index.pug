@@ -7,6 +7,10 @@ block main
     .container
       .navbar.page-header__navbar
         a.link.link--clear.app-logo.navbar__logo(href='#') Brunch
+        button.button.button--clear.button--outline.navbar__toggle.slide-out-menu-toggle(type='button') Menu
+        nav.menu.slide-out-menu
+          h2.heading.heading--clear.menu__title Navigation
+          button.button.button--clear.button--outline.menu__button.slide-out-menu__toggle Close
   main.main
     section.section.section--base.home-section
       .container
@@ -15,3 +19,4 @@ block main
   footer.page-footer
     .container
       p.text.text--clear.copyright-text &copy; Ethcrawford 2018
+  .slide-out-menu-overlay
