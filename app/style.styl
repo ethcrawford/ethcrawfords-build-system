@@ -1,23 +1,7 @@
 @import 'styles/variables/_colors.styl'
 @import 'styles/variables/_sizes.styl'
+@import 'styles/variables/_parameters.styl'
 @import 'styles/variables/_initiator.styl'
 @import 'styles/mixins/_rem.styl'
 @import 'styles/mixins/_media.styl'
 @import 'styles/mixins/_composer.styl'
-+composer(baz-var)
-  .baz
-    width: rem(240px)
-+composer(foo-var)
-  .foo
-    width: rem(240px)
-    +wider(media-md)
-      width: rem(media-sm)
-+composer(bar-var)
-  .bar
-    width: rem(240px)
-  @media (min-width: media-md)
-    .bar
-      width: rem(media-sm)
-  @media (min-width: media-lg)
-    .bar
-      width: rem(media-lg)
