@@ -3,23 +3,11 @@
 
 
 
-.button--full-size {
-  display: block;
-  width: 100%;
-}
-.button--outline {
-  padding: 0.5rem 0.937rem;
-  border: 0.062rem #26272d solid;
-}
-.button--outline:hover,
-.button--outline:focus {
-  background-color: #26272d;
-  color: #fff;
-}
-.button--rounded {
-  border-radius: 31.25rem;
-}
 
+.sprite-icon {
+  background-image: url("images/sprite.png");
+  background-repeat: no-repeat;
+}
 
 
 
