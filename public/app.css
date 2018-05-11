@@ -2,42 +2,23 @@
 
 
 
-.heading--clear {
-  margin-top: 0;
-  margin-bottom: 0;
-  color: #26272d;
-  font-weight: 400;
-  font-size: 1.5rem;
-}
-.text--clear {
-  margin-top: 0;
-  margin-bottom: 0;
-  color: #26272d;
-  font-weight: 400;
-  font-size: 1rem;
-}
-.link--clear {
-  color: #26272d;
-  text-decoration: none;
-  font-size: 1rem;
-}
-.image--auto {
-  width: 100%;
-  height: auto;
-  vertical-align: middle;
-}
-.button--clear {
-  padding: 0;
-  border: 0;
-  background-color: transparent;
-  color: #26272d;
-  white-space: nowrap;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
 
+.button--full-size {
+  display: block;
+  width: 100%;
+}
+.button--outline {
+  padding: 0.5rem 0.937rem;
+  border: 0.062rem #26272d solid;
+}
+.button--outline:hover,
+.button--outline:focus {
+  background-color: #26272d;
+  color: #fff;
+}
+.button--rounded {
+  border-radius: 31.25rem;
+}
 
 
 
