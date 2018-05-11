@@ -29,8 +29,7 @@ exports.config = {
           /styles\/animator\.styl/,
           /styles\/switch\.styl/,
           /styles\/utility\.styl/,
-          /styles\/forced\.styl/,
-          /styles\/visually-hidden\.styl/
+          /styles\/forced\.styl/
         ]
       }
     }
