@@ -7,7 +7,7 @@ exports.config = {
       joinTo: 'app.js',
       order: {
         before: [
-          /scripts\/jquery.min.js/
+          'node_modules/jquery/dist/jquery.min.js'
         ]
       }
     },
@@ -33,6 +33,15 @@ exports.config = {
         ]
       }
     }
+  },
+  paths: {
+    public: 'public',
+    watched: [
+      'app',
+      'test',
+      'vendor',
+      'node_modules/jquery/dist/jquery.min.js'
+    ]
   },
   modules: {wrapper: false, definition: false},
   npm: {enabled: false},
