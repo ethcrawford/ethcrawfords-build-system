@@ -7,10 +7,34 @@ block main
     .container
       .navbar.page-header__navbar
         a.link.link--clear.app-logo.navbar__logo(href='#') Brunch
+        ul.list.list--clear.inline-list
+          li
+            a.link.link--clear(href='#') One link
+          li
+            a.link.link--clear(href='#') Two link
+          li
+            a.link.link--clear(href='#') Three
+          li
+            a.link.link--clear(href='#') Four element
+          li
+            a.link.link--clear(href='#') Five
         button.button.button--clear.button--outline.navbar__toggle.slide-out-menu-toggle(type='button') Menu
-        nav.menu.slide-out-menu
-          h2.heading.heading--clear.menu__title Navigation
-          button.button.button--clear.button--outline.menu__button.slide-out-menu__toggle Close
+  .slide-out-menu-container
+    nav.menu.slide-out-menu
+      h2.heading.heading--clear.menu__title Navigation
+      button.button.button--clear.button--outline.menu__button.slide-out-menu__toggle Close
+      ul.list.list--clear.inline-list
+        li
+          a.link.link--clear(href='#') One link
+        li
+          a.link.link--clear(href='#') Two link
+        li
+          a.link.link--clear(href='#') Three
+        li
+          a.link.link--clear(href='#') Four element
+        li
+          a.link.link--clear(href='#') Five
+    .slide-out-menu-overlay
   main.main
     section.section.section--base.home-section
       .container
@@ -19,4 +43,3 @@ block main
   footer.page-footer
     .container
       p.text.text--clear.copyright-text &copy; Ethcrawford 2018
-  .slide-out-menu-overlay
