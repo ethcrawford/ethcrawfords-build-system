@@ -6,5 +6,8 @@
 @import 'mixins/_media.styl'
 @import 'mixins/_composer.styl'
 +composer(utility)
-  .example
-    background-color: orange
+  +composer(text-align)
+    .text-align
+      +composer(text-align_center)
+        &--center
+          text-align: center
