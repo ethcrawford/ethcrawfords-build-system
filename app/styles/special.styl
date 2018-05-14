@@ -25,12 +25,20 @@
       justify-content: space-between
       &__logo
         margin-right: rem(40px)
-
   +composer(app-logo)
     .app-logo
       font-weight: 700
       font-size: rem(24px)
       text-decoration: line-through
+  +composer(navbar-list)
+    .navbar-list
+      &__item
+        margin-right: rem(30px)
+        &--last
+          margin-right: 0
+      &__link
+        &:hover
+          text-decoration: line-through
   +composer(slide-out-menu)
     .slide-out-menu
       position: fixed
