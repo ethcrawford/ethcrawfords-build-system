@@ -81,6 +81,17 @@
           border-color: white_color
           background-color: white_color
           color: base_color
+  +composer(menu-list)
+    .menu-list
+      margin-bottom: rem(20px)
+      &__item
+        margin-bottom: rem(16px)
+        &--last
+          margin-bottom: 0
+      &__link
+        color: white_color
+        &:hover
+          text-decoration: line-through
   +composer(sprite-icon_special)
     .sprite-icon
       &--arrow-left
