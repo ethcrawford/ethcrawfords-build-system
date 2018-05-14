@@ -13,3 +13,16 @@
     .slide-out-menu-overlay
       &--active
         display: block
+  +composer(navbar_toggle_responsive)
+    .navbar
+      &__toggle
+        &--responsive
+          +wider(media-lg)
+            display: none
+  +composer(navbar_list_responsive)
+    .navbar
+      &__list
+        &--responsive
+          display: none
+          +wider(media-lg)
+            display: flex
