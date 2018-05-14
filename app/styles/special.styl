@@ -20,8 +20,12 @@
       transition: all .37s cubic-bezier(0, 0, .58, 1)
   +composer(navbar)
     .navbar
-      &__toggle
-        margin-right: rem(30px)
+      display: flex
+      align-items: center
+      justify-content: space-between
+      &__logo
+        margin-right: rem(40px)
+
   +composer(app-logo)
     .app-logo
       font-weight: 700
