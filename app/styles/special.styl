@@ -8,6 +8,16 @@
 @import 'mixins/_composer.styl'
 @import 'mixins/_sprite.styl'
 +composer(special)
+  +composer(page-header)
+    .page-header
+      position: fixed
+      top: 0
+      left: 0
+      z-index: page-header_z-index
+      padding: rem(44px) 0
+      width: 100%
+      background-color: transparent
+      transition: all .37s cubic-bezier(0, 0, .58, 1)
   +composer(navbar)
     .navbar
       &__toggle
