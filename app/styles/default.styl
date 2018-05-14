@@ -27,3 +27,19 @@
     .inline-list
       display: flex
       align-items: center
+  +composer(section)
+    +composer(section)
+      .section
+        padding-top: rem(300px)
+        padding-bottom: rem(300px)
+        +composer(section_heading)
+          &__heading
+            margin-bottom: rem(20px)
+            font-size: rem(30px)
+        +composer(section_subtitle)
+          &__subtitle
+            margin-bottom: rem(30px)
+            font-size: rem(18px)
+        +composer(section_text)
+          &__text
+            line-height: 1.5
