@@ -1,13 +1,34 @@
 @import 'variables/_colors.styl'
 @import 'variables/_sizes.styl'
 @import 'variables/_parameters.styl'
+@import 'variables/_sprite.styl'
 @import 'variables/_initiator.styl'
+
 @import 'mixins/_rem.styl'
 @import 'mixins/_media.styl'
-@import 'mixins/_composer.styl'
 @import 'mixins/_sprite.styl'
+@import 'mixins/_composer.styl'
+
 +composer(common)
+
   +composer(sprite-icon)
     .sprite-icon
       sprite-image()
       background-repeat: no-repeat
+
+
+  +composer(example)
+    .example
+      padding-top: rem(300px)
+      padding-bottom: rem(300px)
+
+      &__heading
+        margin-bottom: rem(20px)
+        font-size: rem(30px)
+
+      &__subtitle
+        margin-bottom: rem(30px)
+        font-size: rem(18px)
+
+      &__text
+        line-height: 1.5
