@@ -15,7 +15,8 @@
     "static": "static public",
     "sprite": "node sprite.js",
     "clean-public": "rm -rf public/",
-    "clean-sprite": "rm -rf sprite/"
+    "clean-sprite": "rm -rf sprite/",
+    "stylus-repl": "stylus --interactive"
   },
   "devDependencies": {
     "auto-reload-brunch": "^2.7.1",
