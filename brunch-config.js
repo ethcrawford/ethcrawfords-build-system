@@ -57,7 +57,7 @@ exports.config = {
       plugins: [
         poststylus([
           autoprefixer({ browsers: ['last 3 versions'] }),
-          mqpacker()
+          mqpacker({ sort: true })
         ])
       ]
     }
