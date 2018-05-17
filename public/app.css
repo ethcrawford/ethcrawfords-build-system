@@ -323,37 +323,36 @@ template {
   font-size: 1rem;
 }
 
-.heading--clear {
+.heading-clear {
   margin-top: 0;
   margin-bottom: 0;
   color: #26272d;
   font-weight: 400;
   font-size: 1.5rem;
 }
-.text--clear {
+.text-clear {
   margin-top: 0;
   margin-bottom: 0;
   color: #26272d;
-  font-weight: 400;
   font-size: 1rem;
 }
-.link--clear {
+.link-clear {
   color: #26272d;
   text-decoration: none;
   font-size: 1rem;
 }
-.list--clear {
+.list-clear {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
 }
-.image--auto {
+.image-auto {
   width: 100%;
   height: auto;
   vertical-align: middle;
 }
-.button--clear {
+.button-clear {
   padding: 0;
   border: 0;
   background-color: transparent;
