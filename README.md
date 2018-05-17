@@ -12,10 +12,11 @@
 * **sprite** - `node sprite.js` - Generate sprite
 * **clean-public** - `rm -rf public/`
 * **clean-sprite** - `rm -rf sprite/`
+* **stylus-repl** - `stylus --interactive`
 
 ## Version
 
-`v1.0.0` 2018
+`v2.0.0` 2018
 
 ## License
 
