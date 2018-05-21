@@ -17,7 +17,7 @@
     "clean-public": "rm -rf public/",
     "clean-sprite": "rm -rf sprite/",
     "stylus-repl": "stylus --interactive",
-    "js2coffee": "js2coffee app/scripts/SlickCarousel.js | tee -a app/scripts/SlickCarousel.coffee"
+    "js2coffee": "js2coffee app/initialize.js | tee -a app/initialize.coffee"
   },
   "devDependencies": {
     "auto-reload-brunch": "^2.7.1",
