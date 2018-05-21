@@ -2,12 +2,6 @@ document.addEventListener('DOMContentLoaded', function() {
   // Window scroll events
   $(window).on('scroll', function() {
     var wScroll = $(this).scrollTop();
-    // Activate||Deactivate Navbar
-    if (wScroll > 20) {
-      $('.page-header').addClass('page-header--active');
-    } else {
-      $('.page-header').removeClass('page-header--active');
-    }
     if (wScroll > 600) {
       $('.scroll-up').addClass('scroll-up--active');
     } else {
