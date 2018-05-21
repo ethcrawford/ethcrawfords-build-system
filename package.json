@@ -13,11 +13,11 @@
     "build-dev": "brunch build",
     "build": "brunch build --production",
     "static": "static public",
-    "sprite": "node sprite.js",
+    "sprite": "coffee sprite.coffee",
     "clean-public": "rm -rf public/",
     "clean-sprite": "rm -rf sprite/",
     "stylus-repl": "stylus --interactive",
-    "js2coffee": "js2coffee brunch-config.js | tee -a brunch-config.coffee"
+    "js2coffee": "js2coffee sprite.js | tee -a sprite.coffee"
   },
   "devDependencies": {
     "auto-reload-brunch": "^2.7.1",
