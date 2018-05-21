@@ -17,7 +17,7 @@
     "clean-public": "rm -rf public/",
     "clean-sprite": "rm -rf sprite/",
     "stylus-repl": "stylus --interactive",
-    "js2coffee": "js2coffee app/scripts/Wow.js | tee -a app/scripts/Wow.coffee"
+    "js2coffee": "js2coffee app/scripts/MagnificPopup.js | tee -a app/scripts/MagnificPopup.coffee"
   },
   "devDependencies": {
     "auto-reload-brunch": "^2.7.1",
@@ -38,6 +38,7 @@
   },
   "dependencies": {
     "jquery": "^3.3.1",
+    "magnific-popup": "^1.1.0",
     "wow.js": "^1.2.2"
   }
 }
