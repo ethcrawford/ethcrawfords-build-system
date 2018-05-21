@@ -16,7 +16,8 @@
     "sprite": "node sprite.js",
     "clean-public": "rm -rf public/",
     "clean-sprite": "rm -rf sprite/",
-    "stylus-repl": "stylus --interactive"
+    "stylus-repl": "stylus --interactive",
+    "js2coffee": "js2coffee app/scripts/example.js | tee -a app/scripts/example.coffee"
   },
   "devDependencies": {
     "auto-reload-brunch": "^2.7.1",
@@ -27,6 +28,7 @@
     "css-mqpacker": "^6.0.2",
     "html-pages-brunch": "^2.7.0",
     "imagemin-brunch": "^1.1.0",
+    "js2coffee": "^2.2.0",
     "node-sprite-generator": "^0.10.2",
     "node-static": "^0.7.10",
     "poststylus": "^1.0.0",
