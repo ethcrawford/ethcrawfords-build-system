@@ -1,5 +1,5 @@
 document.addEventListener 'DOMContentLoaded', ->
-  $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click (event) ->
+  $('.smooth-scroll').not('[href="#"]').not('[href="#0"]').click (event) ->
     # On-page links
     if location.pathname.replace(/^\//, '') == @pathname.replace(/^\//, '') and location.hostname == @hostname
       # Figure out element to scroll to
