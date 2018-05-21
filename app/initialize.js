@@ -1,13 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-  // Window scroll events
-  $(window).on('scroll', function() {
-    var wScroll = $(this).scrollTop();
-    if (wScroll > 600) {
-      $('.scroll-up').addClass('scroll-up--active');
-    } else {
-      $('.scroll-up').removeClass('scroll-up--active');
-    }
-  });
   // Smooth Scroll
   $('a[href*="#"]')
     // Remove links that don't actually link to anything
