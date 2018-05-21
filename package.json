@@ -17,7 +17,7 @@
     "clean-public": "rm -rf public/",
     "clean-sprite": "rm -rf sprite/",
     "stylus-repl": "stylus --interactive",
-    "js2coffee": "js2coffee app/scripts/ScrollUp.js | tee -a app/scripts/ScrollUp.coffee"
+    "js2coffee": "js2coffee app/scripts/SmoothScroll.js | tee -a app/scripts/SmoothScroll.coffee"
   },
   "devDependencies": {
     "auto-reload-brunch": "^2.7.1",
