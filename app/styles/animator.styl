@@ -7,6 +7,9 @@
 @import 'mixins/_media.styl'
 @import 'mixins/_composer.styl'
 
-+composer(animator)
-  .test
-    color: inherit
++composer(initiator__animator)
+
+  +composer(animator__bounce)
+    .bounce
+      animation-name: bounce
+      transform-origin: center bottom
