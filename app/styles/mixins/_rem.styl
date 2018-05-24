@@ -1,10 +1,20 @@
 rem(value)
-  unit = unit(value)
-  if (unit is 'px')
-    unit(floor((value / 16), 3), 'rem')
+  if value == 'auto'
+    auto
+  else if value == 'inherit'
+    inherit
   else
-    unit(value, unit)
+    unit = unit(value)
+    if unit is 'px'
+      unit(floor((value / 16), 3), 'rem')
+    else
+      unit(value, unit)
 
 
 tracking(value)
   unit(floor((value / 1000), 3), 'em')
+
+
+size(value1, value2)
+  width: rem(value1)
+  height: rem(value2)
