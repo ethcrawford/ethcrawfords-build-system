@@ -9,6 +9,17 @@
 
 +composer(initiator__animator)
 
+  +composer(animator__animated)
+    .animated
+      animation-duration: 1s
+      animation-fill-mode: both
+
+
+  +composer(animator__animated-infinite)
+    .animated.infinite
+      animation-iteration-count: infinite
+
+
   +composer(animator__bounce)
     .bounce
       animation-name: bounce
