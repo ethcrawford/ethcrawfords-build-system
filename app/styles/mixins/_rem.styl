@@ -26,3 +26,31 @@ relative(value1, value2, value3, value4)
   right: rem(value2)
   bottom: rem(value3)
   left: rem(value4)
+
+
+absolute(value1, value2, value3, value4, value5)
+  position: absolute
+  unless value1 == no
+    top: rem(value1)
+  unless value2 == no
+    right: rem(value2)
+  unless value3 == no
+    bottom: rem(value3)
+  unless value4 == no
+    left: rem(value4)
+  unless value5 == no
+    z-index: value5
+
+
+fixed(value1, value2, value3, value4, value5)
+  position: fixed
+  unless value1 == no
+    top: rem(value1)
+  unless value2 == no
+    right: rem(value2)
+  unless value3 == no
+    bottom: rem(value3)
+  unless value4 == no
+    left: rem(value4)
+  unless value5 == no
+    z-index: value5
