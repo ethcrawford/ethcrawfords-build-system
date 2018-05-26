@@ -412,8 +412,8 @@ template {
   top: 0;
   left: 0;
   z-index: 1000;
-  padding: 2.75rem 0;
   width: 100%;
+  padding: 2.75rem 0;
   background-color: transparent;
   -webkit-transition: all 0.37s cubic-bezier(0, 0, 0.58, 1);
   -o-transition: all 0.37s cubic-bezier(0, 0, 0.58, 1);
@@ -444,10 +444,10 @@ template {
   top: 0;
   left: -18.75rem;
   z-index: 1050;
-  overflow-y: auto;
-  padding: 2.5rem;
   width: 18.75rem;
   height: 100%;
+  overflow-y: auto;
+  padding: 2.5rem;
   background-color: #26272d;
   -webkit-transition: all 0.7s cubic-bezier(0.545, 0, 0.05, 1);
   -o-transition: all 0.7s cubic-bezier(0.545, 0, 0.05, 1);
@@ -532,9 +532,9 @@ template {
 
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
+  width: 0.062rem;
+  height: 0.062rem;
+  margin: -0.063rem;
   border: 0;
   padding: 0;
   white-space: nowrap;
