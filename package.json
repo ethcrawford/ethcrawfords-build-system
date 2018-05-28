@@ -19,7 +19,8 @@
     "stylus-repl": "stylus --interactive",
     "js2coffee": "js2coffee app/initialize.js | tee -a app/initialize.coffee",
     "css2stylus": "stylus -C app/example.css",
-    "pug-transpile": "pug transpil/source/source.pug -o transpil/output -w -P"
+    "pug-transpile": "pug transpil/source/source.pug -o transpil/output -w -P",
+    "stylus-transpile": "stylus transpil/source/source.styl -o transpil/output -w"
   },
   "devDependencies": {
     "auto-reload-brunch": "^2.7.1",
