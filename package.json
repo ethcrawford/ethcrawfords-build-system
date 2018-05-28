@@ -18,7 +18,8 @@
     "clean-sprite": "rm -rf sprite/",
     "stylus-repl": "stylus --interactive",
     "js2coffee": "js2coffee app/initialize.js | tee -a app/initialize.coffee",
-    "css2stylus": "stylus -C app/example.css"
+    "css2stylus": "stylus -C app/example.css",
+    "pug-transpile": "pug transpil/source/source.pug -o transpil/output -w -P"
   },
   "devDependencies": {
     "auto-reload-brunch": "^2.7.1",
@@ -33,6 +34,7 @@
     "node-sprite-generator": "^0.10.2",
     "node-static": "^0.7.10",
     "poststylus": "^1.0.0",
+    "pug-cli": "^1.0.0-alpha6",
     "pugjs-brunch": "^2.10.2",
     "stylus-brunch": "^2.10.0",
     "uglify-js-brunch": "^2.10.0"
