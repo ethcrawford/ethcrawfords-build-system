@@ -17,10 +17,11 @@
     "clean-public": "rm -rf public/",
     "clean-sprite": "rm -rf sprite/",
     "stylus-repl": "stylus --interactive",
-    "js2coffee": "js2coffee transpil/js/source.js | tee -a transpil/js/source.coffee",
-    "css2stylus": "stylus -C transpil/css/source.css",
+    "html2pug": "html2pug < transpil/html/source.html > transpil/html/source.pug",
     "pug2html": "pug transpil/pug/source.pug -w -P",
+    "css2stylus": "stylus -C transpil/css/source.css",
     "stylus2css": "stylus transpil/stylus/source.styl -w",
+    "js2coffee": "js2coffee transpil/js/source.js | tee -a transpil/js/source.coffee",
     "coffee2js": "coffee -w -c transpil/coffee/source.coffee"
   },
   "devDependencies": {
@@ -31,6 +32,7 @@
     "coffee-script-brunch": "^2.10.2",
     "css-mqpacker": "^6.0.2",
     "html-pages-brunch": "^2.7.0",
+    "html2pug": "^2.0.1",
     "imagemin-brunch": "^1.1.0",
     "js2coffee": "^2.2.0",
     "node-sprite-generator": "^0.10.2",
