@@ -21,7 +21,7 @@
     "css2stylus": "stylus -C transpil/css/source.css",
     "pug2html": "pug transpil/pug/source.pug -w -P",
     "stylus2css": "stylus transpil/stylus/source.styl -w",
-    "coffee-transpile": "coffee -o transpil/output -w -c transpil/source/source.coffee"
+    "coffee2js": "coffee -w -c transpil/coffee/source.coffee"
   },
   "devDependencies": {
     "auto-reload-brunch": "^2.7.1",
