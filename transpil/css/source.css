@@ -1,0 +1,11 @@
+.example {
+  color: inherit;
+}
+.class {
+  color: inherit;
+}
+.class__element {
+  border: 1px #000 solid;
+  background: #000;
+  font: 'Roboto', sans-serif;
+}
