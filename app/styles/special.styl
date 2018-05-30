@@ -149,3 +149,44 @@
         sprite-position(sprite-marker)
         sprite-width(sprite-marker)
         sprite-height(sprite-marker)
+
+  // Section 756px
+  .customers
+    padding-top: rem(130px)
+    padding-bottom: rem(130px)
+    background: #fafafa
+
+  .testimonials
+    font-family: 'Lato', sans-serif
+    margin-bottom: rem(64px)
+    &__heading
+      font-size: rem(32px)
+      font-weight: 300
+      margin-bottom: rem(45px)
+    &__text
+      color: #8c8f94
+      font-size: rem(20px)
+      line-height: 1.4
+      margin-bottom: rem(30px)
+    &__author
+      letter-spacing: tracking(100)
+      font-size: rem(12px)
+      text-transform: uppercase
+      font-weight: 700
+
+  .authors
+    &__content
+      margin-right: auto
+      margin-left: auto
+      // size(130px, 130px)
+      transition: all 0.37s cubic-bezier(0.545, 0, 0.05, 1)
+      transform: scale(0.7)
+
+    &__image
+      border: rem(1px) transparent solid
+      border-radius: 50%
+/*
+  .slick-slide.slick-active.slick-current.click-center .authors__content
+    transform: scale(1)
+    opacity: 1
+*/

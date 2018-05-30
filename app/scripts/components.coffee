@@ -33,17 +33,20 @@ document.addEventListener 'DOMContentLoaded', ->
 # Owl carousel
 
 document.addEventListener 'DOMContentLoaded', ->
-  $('.owl-carousel').owlCarousel
-    loop: true
-    margin: 10
-    nav: true
-    responsive:
-      0:
-        item: 1
-      600:
-        item: 3
-      1000:
-        item: 5
+  $('.customers__authors').slick
+    infinite: true
+    slidesToShow: 3
+    centerMode: true
+    centerPadding: '0px'
+    focusOnSelect: true
+    slidesToScroll: 3
+    asNavFor: '.customers__testimonials'
+
+  $('.customers__testimonials').slick
+    infinite: true
+    slidesToShow: 1
+    slidesToScroll: 1
+    asNavFor: '.customers__authors'
 
   return
 
