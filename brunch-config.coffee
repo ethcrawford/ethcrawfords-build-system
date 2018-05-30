@@ -1,11 +1,16 @@
 poststylus = require('poststylus')
 autoprefixer = require('autoprefixer')
 mqpacker = require('css-mqpacker')
+
 exports.config =
   files:
     javascripts:
       joinTo: 'app.js'
-      order: before: [ 'node_modules/jquery/dist/jquery.min.js' ]
+
+      order:
+        before: [ 'app/scripts/libraries.js', 'app/scripts/plugins.js' ]
+        after: [ 'app/scripts/components.coffee', 'app/initialize.coffee' ]
+
     stylesheets:
       joinTo: 'app.css'
       order:
@@ -26,17 +31,7 @@ exports.config =
           /styles\/utility\.styl/
           /styles\/forced\.styl/
         ]
-  paths:
-    public: 'public'
-    watched: [
-      'app'
-      'test'
-      'vendor'
-      'node_modules/jquery/dist/jquery.min.js'
-      'node_modules/magnific-popup/dist/jquery.magnific-popup.min.js'
-      'node_modules/owl.carousel/dist/owl.carousel.min.js'
-      'node_modules/wow.js/dist/wow.min.js'
-    ]
+
   modules:
     wrapper: false
     definition: false
