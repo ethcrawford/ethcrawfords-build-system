@@ -13,36 +13,48 @@ exports.config =
 
     stylesheets:
       joinTo: 'app.css'
+
       order:
         before: [
-          /styles\/box-model\.styl/
-          /styles\/normalize\.styl/
-          /styles\/modular-grid\.styl/
-          /styles\/base\.styl/
-          /styles\/equalizer\.styl/
-          /styles\/default\.styl/
-          /styles\/common\.styl/
+          'app/styles/box-model.styl'
+          'app/styles/normalize.styl'
+          'app/styles/modular-grid.styl'
+          'app/styles/base.styl'
+          'app/styles/equalizer.styl'
+          'app/styles/default.styl'
+          'app/styles/common.styl'
         ]
+
         after: [
-          /styles\/special\.styl/
-          /styles\/animation\.styl/
-          /styles\/animator\.styl/
-          /styles\/switch\.styl/
-          /styles\/utility\.styl/
-          /styles\/forced\.styl/
+          'app/styles/special.styl'
+          'app/styles/animation.styl'
+          'app/styles/animator.styl'
+          'app/styles/switch.styl'
+          'app/styles/utility.styl'
+          'app/styles/forced.styl'
         ]
 
   modules:
     wrapper: false
     definition: false
-  npm: enabled: false
+
+  npm:
+    enabled: false
+
   plugins:
     htmlPages:
       compileAssets: true
       disabled: false
-    pug: pugRuntime: false
-    stylus: plugins: [ poststylus([
-      autoprefixer(browsers: [ 'last 3 versions' ])
-      mqpacker(sort: true)
-    ]) ]
+
+    pug:
+      pugRuntime: false
+
+    stylus:
+      plugins: [
+        poststylus([
+          autoprefixer(browsers: [ 'last 3 versions' ])
+          mqpacker(sort: true)
+        ])
+      ]
+
   sourceMaps: false
